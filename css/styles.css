@@ -37,6 +37,40 @@ header {
     background-color: #000; /* Fundo preto */
 }
 
+/* Esconder logo no celular e movê-la para o menu */
+@media (max-width: 768px) {
+    .logo-container {
+        display: none; /* Oculta a logo no celular */
+    }
+
+    #navbar .logo-container {
+        display: flex; /* Exibe a logo dentro do menu no celular */
+        align-items: center;
+        justify-content: center;
+        padding-right: 10px; /* Ajusta o espaçamento da logo */
+    }
+
+    #navbar .logo-container .profile-img {
+        width: 50px; /* Tamanho reduzido da logo no menu */
+    }
+
+    .swiper {
+        height: 100vh; /* Preenche a tela inteira com o carrossel no celular */
+    }
+}
+
+/* Restauro do comportamento no PC */
+@media (min-width: 769px) {
+    .logo-container {
+        display: flex; /* Mantém a logo visível no layout padrão (PC) */
+    }
+
+    .swiper {
+        height: auto; /* Altura normal do carrossel no PC */
+    }
+}
+
+
 .profile-img {
     width: 80%; /* Tamanho da logo proporcional ao container */
     height: auto;
