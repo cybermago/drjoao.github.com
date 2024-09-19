@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Jonatã Mendes">
+    <meta name="Description" content="">
+    <meta name="Keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr - João Inocêncio</title>
+  <!-- Bootstrap CSS -->
+  <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome para o ícone do WhatsApp -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="img/logo.jpeg" type="image/png">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dr. João Inocêncio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testemunhas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      
+    <header>
+        
+        <!-- Flex container para logo e carrossel -->
+        <div class="header-container d-flex align-items-center">
+            <!-- Logo com fundo preto e formato de círculo -->
+            <div class="logo-container">
+                <img src="img/logo.jpeg" alt="Foto de Perfil" class="profile-img">
+            </div>
+    
+            <!-- Carrossel de Imagens com Swiper -->
+            <div class="swiper" style="color:white">
+                <div class="swiper-wrapper" style="color: white;">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide" style="background-image: url('img/1.jpeg');">
+                        <div class="overlay"></div>
+                        <div class="content">
+      
+                            <h1>Tratamentos Personalizados</h1>
+                            <p>Abordagens terapêuticas focadas em cada paciente, promovendo uma recuperação eficaz e completa."</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide" style="background-image: url('img/3.jpeg');">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <h1>Reabilitação Avançada </h1>
+                            <p>"Tecnologias e técnicas modernas para acelerar a recuperação e melhorar a qualidade de vida."</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide" style="background-image: url('img/premio.jpeg');">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <h1>Reconhecimento de Excelência </h1>
+                            <p>"Dr. João Inocêncio recebe o Prêmio Inovare pela inovação e excelência em fisioterapia."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seções -->
+  <section id="sobre" class="container py-5" style="width: 100%">
+    <h2 class="text-center mb-4">Sobre Mim</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/perfil.jpeg" alt="Sobre Mim" class="img-fluid img-thumbnail mx-auto d-block rounded-circle">
+      </div>
+      <div class="col-md-6">
+       <p>Sou Dr. João Inocêncio, fisioterapeuta com aproximadamente 6 anos de experiência, formado em Fisioterapia pela Universidade Federal do Piauí, em Teresina. 
+        Durante minha trajetória, desenvolvi um forte compromisso com a promoção da saúde e a reabilitação de pacientes, atuando em diversas áreas da fisioterapia.
+        Atualmente, integro a equipe do Hospital Macroregional de Coroatá e do Centro de Reabilitação da cidade, onde colaboro na recuperação e bem-estar de pacientes com diferentes necessidades. 
+        Recentemente, assumi o cargo de Coordenador da Área da Saúde, uma responsabilidade que reflete minha dedicação ao cuidado humanizado e à excelência no tratamento fisioterapêutico.
+        Meu objetivo é continuar impactando positivamente a vida de cada paciente, sempre em busca de novas abordagens que melhorem a qualidade de vida e o bem-estar de todos que confiam em meu trabalho.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="services" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Serviços</h2>
+      <div class="row">
+        
+        <div class="col-md-4">
+          <div class="card mb-3 service-box text-center" style="max-width: 18rem;margin: auto;">
+            <div class="container text-center my-5">
+                <img src="img/ventosaterapia.gif" alt="Descrição do GIF" class="img-fluid rounded">
+              </div>
+              <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold mb-3"><i class="fas fa-solid fa-heartbeat pr-2"></i></h6></a>
+            <div class="card-header"><h3>Ventosaterapia</h3></div>
+            <p class="card-text">Técnica que utiliza copos de sucção para melhorar a circulação sanguínea, aliviando dores musculares, inflamações e promovendo o relaxamento.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-3 service-box text-center" style="max-width: 18rem;margin: auto;">
+              <div class="container text-center my-5">
+                  <img src="img/acupuntura.gif" alt="Descrição do GIF" class="img-fluid rounded">
+                </div>
+                <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold mb-3"><i class="fas fa-solid fa-heartbeat pr-2"></i></h6></a>
+              <div class="card-header"><h3>Acumpuntura</h3></div>
+              <p class="card-text">Terapia milenar que estimula pontos específicos do corpo com agulhas finas para equilibrar a energia vital, aliviando dores e promovendo bem-estar.</p>
+            </div>
+          </div>
+        
+        <div class="col-md-4">
+          <div class="card mb-3 service-box text-center" style="max-width: 18rem;margin: auto;">
+            <div class="container text-center my-5">
+                <img src="img/massagem.gif" alt="Descrição do GIF" class="img-fluid rounded">
+              </div>
+              <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold mb-3"><i class="fas fa-solid fa-heartbeat pr-2"></i></h6></a>
+            <div class="card-header"><h3>Terapias Manuais</h3></div>
+            <p class="card-text">Conjunto de técnicas de manipulação e mobilização dos tecidos e articulações, indicado para tratar disfunções musculoesqueléticas e melhorar a mobilidade.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-3 service-box text-center" style="max-width: 18rem;margin: auto;">
+              <div class="container text-center my-5">
+                  <img src="img/massagem1.gif" alt="Descrição do GIF" class="img-fluid rounded">
+                </div>
+                <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold mb-3"><i class="fas fa-solid fa-heartbeat pr-2"></i></h6></a>
+              <div class="card-header"><h3>Fisioterapia Gerontológica</h3></div>
+              <p class="card-text"> Cuidados especializados para idosos, focados na promoção da saúde, prevenção de doenças e melhora da qualidade de vida por meio de exercícios e técnicas adequadas.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-3 service-box text-center" style="max-width: 18rem;margin: auto;">
+              <div class="container text-center my-5">
+                  <img src="img/massagem2.gif" alt="Descrição do GIF" class="img-fluid rounded">
+                </div>
+                <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold mb-3"><i class="fas fa-solid fa-heartbeat pr-2"></i></h6></a>
+              <div class="card-header"><h3>Fisioterapia Respirátoria</h3></div>
+              <p class="card-text">Intervenção para melhorar a função pulmonar, indicada para pacientes com dificuldades respiratórias, como asma, bronquite e outras condições pulmonares.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-3 service-box text-center" style="max-width: 18rem;margin: auto;">
+              <div class="container text-center my-5">
+                  <img src="img/massagem3.gif" alt="Descrição do GIF" class="img-fluid rounded">
+                </div>
+                <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold mb-3"><i class="fas fa-solid fa-heartbeat pr-2"></i></h6></a>
+              <div class="card-header"><h3>Fisioterápia Neurológica</h3></div>
+              <p class="card-text">Tratamentos focados na reabilitação de pacientes com doenças ou lesões no sistema nervoso, promovendo a recuperação de movimentos e funções motoras.</p>
+            </div>
+          </div>
+
+        <div class="col-md-4">
+          <div class="card mb-3 service-box text-center" style="max-width: 18rem;margin: auto;">
+            <div class="container text-center my-5">
+                <img src="img/massagem.gif" alt="Descrição do GIF" class="img-fluid rounded">
+              </div>
+              <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold mb-3"><i class="fas fa-heartbeat pr-2"></i></h6></a>
+                <div class="card-header"><h3>Fisioterapia Traumatoortopédica</h3></div>
+                <p class="card-text">Intervenção voltada para a reabilitação de lesões traumáticas e ortopédicas, como fraturas, luxações e cirurgias, com foco na restauração da função e mobilidade.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-3 service-box text-center" style="max-width: 18rem;margin: auto;">
+              <div class="container text-center my-5">
+                  <img src="img/massagem1.gif" alt="Descrição do GIF" class="img-fluid rounded">
+                </div>
+                <a href="#!" class="deep-orange-text"><h6 class="font-weight-bold mb-3"><i class="fas fa-solid fa-heartbeat pr-2"></i></h6></a>
+                  <div class="card-header"><h3>Fisioterapia Desportiva</h3></div>
+                  <p class="card-text">Tratamento especializado em prevenir e reabilitar lesões causadas pela prática esportiva, promovendo a recuperação rápida e segura para que os atletas possam retornar à atividade física com desempenho otimizado.</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="container py-5" >
+    <h2 class="text-center mb-4">Casos de Sucesso</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center project-box" style="margin: auto;">
+            <div class="container my-5">
+                <img src="img/terapia.jpeg" alt="Projeto 1" class="img-fluid rounded" style="margin: auto;">
+                <h4 class="mt-2">Caso 1</h4>
+                <p>Tratamento com sucesso</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center project-box" style="margin: auto;">
+            <div class="container my-5">
+                <img src="img/terapiababy.jpeg" alt="Projeto 2" class="img-fluid rounded" style="margin: auto;">
+                <h4 class="mt-2">Caso 2</h4>
+                <p>Tratamento com Sucesso</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center project-box" style="margin: auto;">
+            <div class="container my-5">
+                <img src="img/terapiababy2.jpeg" alt="Projeto 3" class="img-fluid rounded" style="margin: auto;">
+                <h4 class="mt-2">Caso 3</h4>
+                <p>Tratamento com Sucesso</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Seção de Testemunhas -->
+<section id="testimonials" class="container py-5" style="width: 100%;">
+    <h2 class="text-center mb-4">Testemunhas</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <div class="stars mb-2">
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+        </div>
+        <h5>Nome da Pessoa 1</h5>
+        <p>Testemunho da pessoa 1. É um testemunho positivo, falando sobre a experiência com seus serviços.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="stars mb-2">
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+        </div>
+        <h5>Nome da Pessoa 2</h5>
+        <p>Testemunho da pessoa 2. Eles explicam como seu serviço foi útil e recomendam.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="stars mb-2">
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+          <i class="fas fa-star" style="color: gold;"></i>
+        </div>
+        <h5>Nome da Pessoa 3</h5>
+        <p>Testemunho da pessoa 3, elogiando seu trabalho e experiência geral.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-section text-center">
+    <!-- Elementos geométricos giratórios -->
+    <div class="rotating-shape"></div>
+    <div class="rotating-shape"></div>
+    <div class="rotating-shape"></div>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="animate__animated animate__fadeInLeft">Recupere Seu Movimento</h1>
+                <p class="animate__animated animate__fadeInLeft animate__delay-1s">Como fisioterapeuta, meu objetivo é ajudar você a retornar às suas atividades diárias com conforto e confiança. Agende uma consulta e comece sua jornada de recuperação!</p>
+                <a href="#contact" class="btn btn-light btn-lg animate__animated animate__bounce">Agende sua Consulta</a>
+            </div>
+            <div class="col-md-6">
+                <img src="img/drjoao.png" alt="Fisioterapeuta" class="cta-image animate__animated animate__fadeInRight" />
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+  <section id="contact" class="container py-5" style="color: #002245;">
+    <h2 class="text-center mb-4">Contato</h2>
+    <form action="https://formspree.io/f/xanwzgkj" class="p-4 rounded" method="POST" style="background-color: #E0F7FA;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" name="name" class="form-control" id="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefone">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea name="message" class="form-control" id="mensagem" rows="5" required></textarea>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-center text-white py-4">
+        <div class="container">
+            <p class="mb-0">© 2024 João Inocencio. Todos os direitos reservados.</p>
+            <p class="mb-0">Desenvolvido por <a href="#" class="text-white text-decoration-none">Jonatã Mendes</a></p>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTopBtn" class="btn btn-primary btn-lg" title="Voltar ao Topo">↑</button>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/+5599982186074" target="_blank" id="whatsappButton">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 800,
+        });
+    </script>
+
+      <!-- Script para o efeito ao rolar o scroll -->
+  <script>
+    $(document).ready(function() {
+      // Ao rolar a página
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+          $('#navbar').addClass('shrink');
+        } else {
+          $('#navbar').removeClass('shrink');
+        }
+      });
+    });
+  </script>
+
+    <!-- Script para mostrar/esconder e controlar o botão -->
+    <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+    </script>
+
+</body>
+</html>

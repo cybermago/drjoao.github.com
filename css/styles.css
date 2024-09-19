@@ -1,0 +1,278 @@
+*,*::after,*::before{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html{
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+}
+
+/* Estilo geral do cabeçalho */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Flexbox no header para alinhar a logo e o carrossel lado a lado */
+.header-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: stretch;
+}
+
+/* Estilização da logo */
+.logo-container {
+    flex: 0 0 20%; /* A logo ocupará 20% da largura da tela */
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Fundo preto */
+}
+
+.profile-img {
+    width: 80%; /* Tamanho da logo proporcional ao container */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #000;
+    padding: 5px;
+}
+
+/* Ajuste para o carrossel */
+.swiper {
+    flex: 1; /* O carrossel preencherá o restante da largura */
+    height: 100%;
+    margin: 0; /* Remover margens para preencher toda a tela */
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Ocupa toda a altura do carrossel */
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    z-index: 2;
+    text-align: center;
+    color: #002245;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+    /* Estilos básicos para o menu */
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        background-color: rgba(0, 6, 34);
+        opacity: 70%; /* Menu escuro semi-transparente */
+        transition: all 0.3s ease; /* Transição suave ao rolar */
+        height: 100px; /* Altura inicial */
+        display: flex;
+        align-items: center;
+      }
+  
+      #navbar.shrink {
+        height: 60px; /* Altura após o scroll */
+        opacity: 0.8; /* Opacidade reduzida após o scroll */
+        background-color: black;
+        opacity: 100%; /* Aumenta a opacidade do fundo */
+      }
+  
+      /* Links do menu */
+      .navbar-nav .nav-link {
+        color: #fff !important; /* Cor do texto branco */
+        font-size: 1.2rem; /* Tamanho de fonte dos links */
+        transition: all 0.3s ease; /* Transição suave dos links */
+      }
+  
+      /* Tamanho da fonte ao rolar o scroll */
+      #navbar.shrink .navbar-nav .nav-link {
+        font-size: 1rem;
+      }
+  
+      /* Espaçamento extra para garantir que o conteúdo não fique sobreposto ao menu */
+      .content {
+        margin-top: 120px;
+      }
+
+      .content h1{
+        color: white;
+      }
+      .content p{
+        color: white;
+      }
+
+
+      /* Seção Serviços */
+#servicos {
+  background-color: #D9CAB3;
+}
+
+.service-box {
+  padding: 20px;
+  border: 5px solid #FFD700;
+  border-radius: 10px;
+  background-color: #E0F7FA ;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.service-box:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-header{
+color: #002245;
+}
+.card-text{
+  color: #002245;
+}
+
+/* Seção Projetos */
+#projetos .project-box {
+  margin-bottom: 30px;
+  background-color: #E0F7FA ;
+  border:5px solid #FFD700;
+}
+
+.project-box h4{
+  color: #002245;
+}
+
+.project-box  p{
+  color: #002245;
+}
+
+        /* Seção Sobre Mim */
+#sobre {
+    background-color: #F2F2F2;
+    width: 100%;
+    color: #333333;
+  }
+  
+  #sobre img {
+    height: auto;
+    width: 300px;
+    object-fit: cover;
+    border: 5px solid #FFD700;
+    padding: 5px;
+    border-radius: 50%;
+    max-width: 100%;
+  }
+
+  .rounded{
+    border-radius: 50%;
+  }
+
+  #contact{
+    color:#002245;
+  }
+  #contact form{
+    border: 5px solid #FFD700;
+  }
+
+/* Estilizando o botão para ficar fixo no canto inferior direito */
+#backToTopBtn {
+    position: fixed;
+    background-color: #1B4965;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 100;
+}
+
+/* Estilo do botão flutuante */
+#whatsappButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#whatsappButton:hover {
+    background-color: #1ebe56;
+    text-decoration: none;
+}
+
+
+.cta-section {
+  background-color: #E0F7FA; /* Fundo verde intenso */
+  color: #002245;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+}
+.cta-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.btn{
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: 1px solid #FFD700;
+}
+.rotating-shape {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(223, 219, 18, 0.2);
+  border-radius: 50%;
+  animation: rotate 15s linear infinite;
+}
+.rotating-shape:nth-child(1) {
+  top: 10%;
+  left: 15%;
+}
+.rotating-shape:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  width: 150px;
+  height: 150px;
+}
+.rotating-shape:nth-child(3) {
+  top: 70%;
+  left: 30%;
+  width: 90px;
+  height: 90px;
+}
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
